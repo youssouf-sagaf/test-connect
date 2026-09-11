@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #111936;
+  --color-violet: #5B2EFF;
+  --color-violet-dark: #301A9B;
+  --color-pink: #E83EAA;
+  --color-blue: #2563EB;
+  --color-violet-light: #F0ECFF;
+  --color-pink-light: #FFF0F8;
+  --color-bg: #FAFAFF;
+  --color-muted: #59627A;
+  --color-border: #E8E9F2;
+  --color-success: #10B981;
+  --color-warning: #F59E0B;
+  --color-error: #EF4444;
+  --font-sans: 'Inter', system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background: var(--color-bg);
+  color: var(--color-navy);
+  -webkit-font-smoothing: antialiased;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #5B2EFF 0%, #E83EAA 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-btn {
+  background: linear-gradient(135deg, #5B2EFF 0%, #E83EAA 100%);
+  color: white;
+  border: none;
+  border-radius: 9999px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.2s;
+}
+.gradient-btn:hover:not(:disabled) { opacity: 0.9; transform: translateY(-1px); }
+.gradient-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.card {
+  background: white;
+  border: 1px solid var(--color-border);
+  border-radius: 24px;
+  box-shadow: 0 4px 24px rgba(17, 25, 54, 0.06);
+}
+
+.organic-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.35;
+  pointer-events: none;
+}
