@@ -1,0 +1,10 @@
+# Exclus du bundle Static Assets lors de `wrangler deploy`
+.git/
+.wrangler/
+node_modules/
+app/node_modules/
+app/src/
+.env
+.env.*
+*.md
+supabase/
